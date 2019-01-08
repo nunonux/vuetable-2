@@ -95,8 +95,11 @@
           <tr>
             <td :colspan="countVisibleFields"
               class="vuetable-empty-result"
-              v-html="noDataTemplate"
-            ></td>
+              v-html="noDataTemplate">
+              <slot name="empty">
+                
+              </slot>
+            </td>
           </tr>
         </template>
         <template v-if="lessThanMinRows">
