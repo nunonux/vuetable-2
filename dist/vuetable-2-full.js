@@ -1,5 +1,5 @@
 /**
- * vuetable-2 v2.0.0-beta.4.1
+ * vuetable-2 v2.0.0-beta.4.2
  * https://github.com/ratiw/vuetable-2
  * Released under the MIT License.
  */
@@ -3998,7 +3998,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
   computed: {
     version: function version() {
-      return "2.0.0-beta.4.1";
+      return "2.0.0-beta.4.2";
     },
     useDetailRow: function useDetailRow() {
       if (!this.dataIsAvailable) return false;
@@ -6890,9 +6890,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "vuetable-empty-result",
     attrs: {
       "colspan": _vm.countVisibleFields
-    },
-    domProps: {
-      "innerHTML": _vm._s(_vm.noDataTemplate)
     }
   }, [_vm._t("empty")], 2)])] : _vm._e(), _vm._v(" "), (_vm.lessThanMinRows) ? _vm._l((_vm.blankRows), function(i) {
     return _c('tr', {

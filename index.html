@@ -97,7 +97,7 @@
                   <div :class="[{'vuetable-wrapper ui basic segment': true}, loading]">
 
                     <vuetable ref="vuetable"
-                      api-url="http://vuetable.ratiw.net/api/users"
+                      api-url="http://vuetable.ratiw.net/api/usersdd"
                       :fields="fields"
                       :table-height="tableHeight"
                       :transform="transform"
@@ -123,6 +123,9 @@
                         <button class="ui red button" @click="onActionClicked('view-item', props.rowData)"><i class="zoom icon"></i></button>
                         <button class="ui blue button" @click="onActionClicked('edit-item', props.rowData)"><i class="edit icon"></i></button>
                         <button class="ui green button" @click="onActionClicked('delete-item', props.rowData)"><i class="delete icon"></i></button>
+                      </div>
+                      <div slot="empty">
+                        chaizan
                       </div>
                     </vuetable>
                     <div class="vuetable-pagination ui bottom attached segment grid">
